@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brandon Hall's Cool Resume</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+
+  <body>
+
+    <div id="iframe" class="set-margin set-padding center-block-horiz">
+      <div class="responsive-wrapper 
+      responsive-wrapper-wxh-572x612" style="-webkit-overflow-scrolling: touch; overflow: auto;">
+        <iframe src="Brandon_Hall_Official_Resume.pdf"></iframe>
+      </div>
+    </div>
+
+    <div class="particle_container">
+        <canvas class="background"></canvas>
+    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+   <script>
+     window.onload = function() {
+        Particles.init({
+          selector: ".background",
+          color: "#7BAFD4",
+          maxParticles: 500,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 300
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 100
+              }
+            }
+          ]
+        });
+      };
+   </script>
+  </body>
+</html>
