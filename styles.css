@@ -25,7 +25,7 @@ body {
   height: 100%;
 }
 
-#iframe {
+#iframe-container {
   max-width: 612px;
   max-height: 100%; 
   overflow: hidden;
@@ -51,7 +51,7 @@ body {
   z-index: 2;
 }
 
-.responsive-wrapper-wxh-572x612 {
+.responsive-wrapper-custom {
   padding-bottom: 133%;
   z-index: 2;
 }
