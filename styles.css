@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-image: url(cool-background-black.png);
+  background-image: url(black-background.png);
 }
 
 .particle_container {
@@ -11,6 +11,7 @@ body {
   overflow: hidden;
   width: 2000px;
   height: 1300px;
+  z-index: 0;
 }
 
 .background {
@@ -20,48 +21,33 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 100%;
 }
 
-#iframe-container {
-  max-width: 800px;
-  max-height: 100%; 
+.container {
+  position: relative;
   overflow: hidden;
+  width: 850px;
+  height: 1130px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  margin: auto;
   z-index: 2;
 }
 
-.responsive-wrapper {
-  position: relative;
-  height: 0; 
-  z-index: 2;     
-}
- 
-.responsive-wrapper iframe {
-  position: absolute;
+.responsive-iframe {
+  position: aboslute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  
-  margin: 0;
-  padding: 0;
-  border: none;
   z-index: 2;
 }
 
-.responsive-wrapper-custom {
-  padding-bottom: 133%;
-  z-index: 2;
-}
-
-.set-margin {
-  margin: 20px;
-  z-index: 2;
-}
-.center-block-horiz {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  z-index: 2;
-}
